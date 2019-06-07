@@ -1,0 +1,11 @@
+body{
+  background-image: linear-gradient(90deg, #6bd6c6 15.63%, #acd180 15.63%, #acd180 31.25%, #dbd99b 31.25%, #dbd99b 37.50%, #f5b1b1 37.50%, #f5b1b1 50%, #6bd6c6 50%, #6bd6c6 65.63%, #acd180 65.63%, #acd180 81.25%, #dbd99b 81.25%, #dbd99b 87.50%, #f5b1b1 87.50%, #f5b1b1 100%);
+  background-size: 160.00px 160.00px;
+}
+h1 {
+
+  text-align: center;
+  color: blue;
+
+
+}
