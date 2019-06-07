@@ -1,11 +1,49 @@
 body{
+  /* Esta es el fondo de mi pagina web */
   background-image: linear-gradient(90deg, #6bd6c6 15.63%, #acd180 15.63%, #acd180 31.25%, #dbd99b 31.25%, #dbd99b 37.50%, #f5b1b1 37.50%, #f5b1b1 50%, #6bd6c6 50%, #6bd6c6 65.63%, #acd180 65.63%, #acd180 81.25%, #dbd99b 81.25%, #dbd99b 87.50%, #f5b1b1 87.50%, #f5b1b1 100%);
   background-size: 160.00px 160.00px;
 }
+  /* Propiedades de las secciones de la página */
+.header{
+
+  margin: auto;
+  width: 500px;
+  font-family: cursive;
+  text-align: justify;
+}
+  /* Quitar las viñetas a las secciones */
+.ol,ul {
+  list-style: none;
+}
+
+  /* Agregar fondo y color de letra a las secciones  */
+.nav li a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+  /* Agregar la propiedad de flotar a las secciones */
+.nav >li {
+
+  float: left;
+}
+  /* Agregar selector al menú de secciones */
+.nav li a:hover {
+  background-color: grey;
+}
+  /* Agregar desplegado de submenús de las secciones */
+.nav li ul {
+
+  display: none;
+  position: absolute;
+}
+
 h1 {
 
   text-align: center;
-  color: blue;
+  color: white;
 
 
 }
