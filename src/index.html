@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+
 
   </head>
 
@@ -15,6 +18,7 @@
 
     <div id="root">
       <h1>Bienvenid@ a tu "Consultorio Virtual de Psicoterapia "</h1>
+
     </div>
 
 <div class="header">
@@ -49,26 +53,28 @@ Para cifrar el mensaje, es necesario que ingreses un número de desplazamientos 
 <label>Chat</label>
 <p>Bienvenid@ al chat de Psicoterapia, soy la Psic. Ana. Cuéntame ¿Cuál es el motivo de tu consulta?</p>
 <br>
-<input id= "input_text" type="text" placeholder="">
+<input id= "input" type="text" size="25" placeholder="Texto a crifrar">
 </br>
+<p id="resultado"></p>
 <br>
-<input type="text" id="desplazamientos" placeholder="">   Ingresa los desplazamientos para cifrar tu mensaje
+<input type="text" id="desplazamiento" placeholder="">   Ingresa los desplazamientos para cifrar tu mensaje
 </br>
+
+
 <br>
-<button type="button" id= "button-cifrar">Cifrar</button>
+<button type="submit" id= "button_cifrar">Cifrar</button>
 </br>
+
 <br>
-<input id= "input_text2" type="text" placeholder="">
+<input id= "output" type="text" placeholder="Aquí aparecera el texto cifrado">
 </br>
 <br>
 <input type="text" id="desplazamientos" placeholder="">   Ingresa los desplazamientos para descifrar tu mensaje
 </br>
 <br>
-<button type="button" id= "button-descifrar">Descifrar</button>
+<button type="submit" id= "button_descifrar">Descifrar</button>
 </br>
 </section>
 </br>
 </br>
 </br>
-  </body>
-</html>

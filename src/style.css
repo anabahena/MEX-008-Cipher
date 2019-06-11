@@ -1,31 +1,24 @@
 body{
   /* Esta es el fondo de mi pagina web */
-  background:
-radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
-radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
-radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
-radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
-radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
-radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
-radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
-radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
-linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
-linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
-background-color: #300;
-background-size: 100px 100px;
+  background-color: #CDCBFF;
 }
   /* Propiedades de las secciones de la página */
 .header{
 
   margin: auto;
   width: 500px;
-  font-family: cursive;
   text-align: justify;
   position: relative;
+  font-family: 'Rajdhani', sans-serif;
 }
   /* Quitar las viñetas a las secciones */
 .ol,ul {
   list-style: none;
+}
+
+#root {
+font-family: 'Rajdhani', sans-serif;
+
 }
 
   /* Agregar fondo y color de letra a las secciones  */
@@ -36,7 +29,7 @@ background-size: 100px 100px;
   padding: 10px 15px;
   display: block;
   font-size: 120%;
-  font-family: sans-serif;
+  font-family: 'Rajdhani', sans-serif;
   position: relative;
 }
   /* Agregar la propiedad de flotar a las secciones */
@@ -46,7 +39,7 @@ background-size: 100px 100px;
 }
   /* Agregar selector al menú de secciones */
 .nav li a:hover {
-  background-color: red;
+  background-color: grey;
 }
   /* Agregar desplegado de submenús de las secciones */
 .nav li ul {
@@ -64,7 +57,7 @@ h1 {
 
   text-align: center;
   color: black;
-  font-family: sans-serif;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 /*Propiedades de estilo del texto de instrucciones*/
@@ -72,7 +65,7 @@ h2 {
 
   text-align: justify;
   color: black;
-  font-family: sans-serif;
+  font-family: 'Dancing Script', cursive;
   font-size: 20px;
 }
 
@@ -84,20 +77,20 @@ h2 {
   padding: 20px;
   margin: auto;
   background-color: black;
-  font-family:sans-serif;
+  font-family: 'Rajdhani', sans-serif;
   font-size: 20px;
   color: white;
   border-bottom: 20px;
 
 }
 
-#button-cifrar,#button-descifrar{
+#button_cifrar,#button_descifrar{
   display: inline-flex;
   width: auto;
   padding: 20px;
   margin: auto;
   background-color: black;
-  font-family:sans-serif;
+  font-family: 'Rajdhani', sans-serif;
   font-size: 20px;
   color: white;
   border-bottom: 20px;
@@ -105,9 +98,9 @@ h2 {
 }
 
 /*Propiedades de estilo de los botones chat, cifrar y descifrar ingresando una animación de color al seleccionarlo*/
-#button_chat:hover, #button-cifrar:hover, #button-descifrar:hover {
+#button_chat:hover, #button_cifrar:hover, #button_descifrar:hover {
 
-  background-color: red;
+  background-color: grey;
 }
 
 /*Agregar propiedades al apartado de descripción*/
@@ -116,7 +109,7 @@ h2 {
   color: black;
   width: 1300px;
   padding: 10px 15px;
-  font-family: sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 20px;
 }
 /*Propiedades de estilo de la descripción 2*/
@@ -124,7 +117,7 @@ h2 {
 
   text-align: center;
   color: black;
-  font-family: sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 20px;
   text-align: center;
 }
@@ -135,16 +128,16 @@ display: none;
 
 }
 
-#input_text {
-width: 500px;
+#input {
+width: auto;
 padding: 200px;
 text-align: justify;
 font-size: 20px;
 
 }
 
-#input_text2 {
-width: 500px;
+#output {
+width: auto;
 padding: 200px;
 text-align: justify;
 font-size: 20px;
