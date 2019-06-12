@@ -83,7 +83,16 @@ h2 {
   border-bottom: 20px;
 
 }
+.disappear {
+  display: none;
+}
 
+
+  .appear {
+    display: none;
+  }
+
+/*Ingresando propiedades de estilo al boton de cifrar y descifrar*/
 #button_cifrar,#button_descifrar{
   display: inline-flex;
   width: auto;
@@ -123,11 +132,8 @@ h2 {
 }
 
 
-.disappear{
-display: none;
 
-}
-
+/*Agregando propiedades a las cajas de texto de entrada*/
 #input {
 width: auto;
 padding: 200px;
@@ -136,10 +142,10 @@ font-size: 20px;
 
 }
 
+/*Agregando propiedades a las cajas de texto de salida*/
 #output {
 width: auto;
 padding: 200px;
 text-align: justify;
 font-size: 20px;
-
 }
