@@ -1,6 +1,8 @@
 body{
   /* Esta es el fondo de mi pagina web */
-  background-color: #CDCBFF;
+  background: #1567af; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #005aa7, #fffde4); 
+  background: linear-gradient(to right, #005aa7, #fffde4); 
 }
   /* Propiedades de las secciones de la página */
 .header{
@@ -139,6 +141,7 @@ width: auto;
 padding: 200px;
 text-align: justify;
 font-size: 20px;
+size: 200px;
 
 }
 

@@ -4,6 +4,7 @@ const secondsection =document.getElementById('second_section');
 
 
 
+
 const getfirstsection = ()=> {
 firstsection.classList.add ("disappear");
 secondsection.classList.remove("appear");
