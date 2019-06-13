@@ -16,7 +16,7 @@
     
 
     <div id="root">
-      <h1>Bienvenid@ a tu "Consultorio Virtual de Psicoterapia "</h1>
+      <h1>Bienvenid@ a tu "Consultorio Virtual de Psicoterapia para sord@s"</h1>
 
     </div>
 
@@ -38,8 +38,8 @@
 <br>
 <section id="first_section" class="dissapear" >
   <label>Estas ingresando a tu Consultorio de Psicoterapia, en el cual podrás chatear con una psicoterapeuta, la cual te apoyará en este proceso que deseas iniciar.
-  Este chat se encuentra cifrado con el fin de que tus datos se encuentren de manera confencial, pues en caso de que, por alguna razón, alguien ingrese a tu página web, no pueda tener acceso a la información que le has proporcionado a tu psicoterapeuta.
-Para cifrar el mensaje, es necesario que ingreses un número de desplazamientos para cifrar el mensaje y dar clic al botón cifrar. Para decifrarlo ingresa el mismo número de desplazamientos y el botón decifrar.</label>
+Este chat se encuentra cifrado con el fin de que tus datos sean confenciales, pues en caso de que alguien ingrese a tu página web, no pueda tener acceso a la información que le has proporcionado a tu psicoterapeuta.
+</label>
 
 <button id= "button_chat" >Iniciar Chat</button>
 </section>
@@ -48,35 +48,40 @@ Para cifrar el mensaje, es necesario que ingreses un número de desplazamientos 
 
 
 <section class="appear" id="second_section">
-<label>Chat</label>
+<label> <strong>Chat</strong></label>
+<br>
+<br>
+<strong>Instrucciones</strong> Para cifrar el mensaje, es necesario que ingreses el texto en el primer cuadro, el número de desplazamientos que deseas utilizar para cifrar el mensaje y dar clic en el botón cifrar. 
+<br> Para decifrarlo ingresa el texto en la segunda caja de texto, el número de desplazamientos que se utilizó para cifrarlo y da clic en el botón decifrar.
 <p>Bienvenid@ al chat de Psicoterapia, soy la Psic. Ana. Cuéntame ¿Cuál es el motivo de tu consulta?</p>
 <br>
-<input id= "input" type="text" size="25" placeholder="Texto a crifrar">
+<input id= "inputStringCif" type="text" size="25" placeholder="Texto a crifrar">
 
-<p id="resultado"></p>
+<p id="códigoCifrado"></p>
 <br>
-<input type="text" id="desplazamiento" placeholder="">   Ingresa los desplazamientos para cifrar tu mensaje
+<input type="text" id="offsetCif" placeholder="">   Ingresa los desplazamientos para cifrar tu mensaje
 
 
-
+<br>
 <br>
 <button type="submit" id= "button_cifrar">Cifrar</button>
 
 <br>
 <br>
-<input id= "output" type="text" placeholder="Aquí aparecera el texto cifrado">
+<input id= "inputStringDescif" class="mayúsculas" type="text" placeholder="Aquí aparecera el texto cifrado">
 
 <br>
 <br>
-<input type="text" id="desplazamientos" placeholder="">   Ingresa los desplazamientos para descifrar tu mensaje
+<input type="text" id="offsetDescif" placeholder="">   Ingresa los desplazamientos para descifrar tu mensaje
 
 <br>
 <button type="submit" id= "button_descifrar">Descifrar</button>
 </section>
 
 
-    <script src="cipher.js"></script>
+   
     <script src="index.js"></script>
+    <script src="cipher.js"></script>
       
 </body>
 </html>
