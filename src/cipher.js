@@ -22,6 +22,7 @@ encode : (offset, string) => {
     const result = mensageEncrypted + String.fromCharCode (cipherMensage);
     console.log(result)
   }
+  
 
 // return (cipher.encode.result);
   
