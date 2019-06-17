@@ -1,9 +1,18 @@
 body{
   /* Esta es el fondo de mi pagina web */
-  background: #1567af; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #005aa7, #fffde4); 
-  background: linear-gradient(to right, #005aa7, #fffde4); 
+  /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+  background-image: url("https://adrianahurtadotelloblog.files.wordpress.com/2016/02/arbol.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+  background-attachment: fixed;
+  -webkit-backface-visibility: inherit;
 }
+
+
+
   /* Propiedades de las secciones de la página */
 .header{
 
@@ -18,6 +27,23 @@ body{
   list-style: none;
 }
 
+.título {
+
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+  color: #ffffff; 
+  font-size: 10px; 
+  font-weight: 200px; 
+  text-align: center; 
+  background:cadetblue; 
+  margin: 0 0 20px; 
+  overflow: hidden; 
+  padding: 5px; 
+  border-radius: 35px 0px 35px 0px; 
+  -moz-border-radius: 35px 0px 35px 0px; 
+  -webkit-border-radius: 35px 0px 35px 0px; 
+  border: 2px solid cadetblue;}
+}
+
 #root {
 font-family: 'Rajdhani', sans-serif;
 
@@ -25,8 +51,8 @@ font-family: 'Rajdhani', sans-serif;
 
   /* Agregar fondo y color de letra a las secciones  */
 .nav li a {
-  background-color: black;
-  color: white;
+  background-color: cadetblue;
+  color: black;
   text-decoration: none;
   padding: 10px 15px;
   display: block;
@@ -66,9 +92,10 @@ h1 {
 h2 {
 
   text-align: justify;
-  color: black;
+  color:black;
   font-family: 'Dancing Script', cursive;
   font-size: 20px;
+ 
 }
 
 
@@ -78,10 +105,10 @@ h2 {
   width: auto;
   padding: 20px;
   margin: auto;
-  background-color: black;
+  background-color: cadetblue;
   font-family: 'Rajdhani', sans-serif;
   font-size: 20px;
-  color: white;
+  color: black;
   border-bottom: 20px;
 
 }
@@ -100,10 +127,10 @@ h2 {
   width: auto;
   padding: 20px;
   margin: auto;
-  background-color: black;
+  background-color: cadetblue;
   font-family: 'Rajdhani', sans-serif;
   font-size: 20px;
-  color: white;
+  color: black;
   border-bottom: 20px;
 
 }
@@ -111,7 +138,7 @@ h2 {
 /*Propiedades de estilo de los botones chat, cifrar y descifrar ingresando una animación de color al seleccionarlo*/
 #button_chat:hover, #button_cifrar:hover, #button_descifrar:hover {
 
-  background-color: grey;
+  background-color: white;
 }
 
 /*Agregar propiedades al apartado de descripción*/
@@ -123,6 +150,8 @@ h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   line-height: 30px;
+  border-bottom: 10px;
+  background-color: inherit;
 }
 /*Propiedades de estilo de la descripción 2*/
 #second_section{

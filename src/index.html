@@ -1,87 +1,92 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
 
 
-  </head>
+  <div id="root" class="título">
+    <h1>Bienvenid@ a tu "Consultorio Virtual de Psicoterapia para personas con sordera"</h1>
 
+  </div>
 
-
-  <body>
-    
-
-    <div id="root">
-      <h1>Bienvenid@ a tu "Consultorio Virtual de Psicoterapia para sord@s"</h1>
-
-    </div>
-
-<div class="header">
-  <ul class="nav">
-    <li><a href "">Inicio </a></li>
-    <li><a href "">Nosotras</a>
-    <ul>
-      <li><a href "">¿Quiénes somos?</a></li>
+  <div class="header">
+    <ul class="nav">
+      <li> <a>Inicio </a></li>
+      <li><a>Nosotras</a>
+        <ul>
+          <li><a>¿Quiénes somos?</a></li>
+        </ul>
+      </li>
+      <li><a>Registro</a></li>
+      <li><a>Iniciar Sesión </a></li>
     </ul>
-  </li>
-    <li><a href "">Registro</a></li>
-    <li><a href "">Iniciar Sesión </a></li>
-  </ul>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <div>
+    <section id="first_section" class="dissapear">
+      <label> El objetivo de este espacio es proporcionarte atención de Psicoterapia.
+        Al elaborar esta página surgió el cuestionamiento sobre el riesgo que corría tu información al momento de
+        iniciar la conversación con tu psicoterapeuta, por lo que hemos pensado en utilizar el Código César (Para saber
+        más da clic
+        <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar">aquí)</a>, con el fin de que mantener la
+        confidencialidad de tu información.
+  <div><button id="button_chat">Iniciar Chat</button></div>
+
+
+
+
+
+  <section class="appear" id="second_section">
+    <label> <strong>Chat</strong></label>
+    <br>
+    <br>
+    <strong>Instrucciones:</strong> Para cifrar el mensaje, es necesario que ingreses el texto en el primer cuadro, el
+    número de desplazamientos que deseas utilizar para cifrar el mensaje y dar clic en el botón cifrar.
+    <br> Para decifrarlo ingresa el texto en la segunda caja de texto, el número de desplazamientos que se utilizó para
+    cifrarlo y da clic en el botón decifrar.
+    <p>Bienvenid@ al chat de Psicoterapia, soy la Psic. Ana. Cuéntame ¿Cuál es el motivo de tu consulta?</p>
+    <br>
+    <input id="inputStringCif" type="text" size="25" placeholder="Texto a crifrar">
+    <br>
+    <label>Tu mensaje cifrado es:</label>
+    <p id="códigoCifrado"></p>
+    <br>
+    <input type="number" id="offsetCif" placeholder=""> Ingresa los desplazamientos para cifrar tu mensaje
+
+    <br>
+    <button type="submit" id="button_cifrar">Cifrar</button>
+
+    <br>
+    <br>
+    <input id="inputStringDescif" class="mayúsculas" type="text" placeholder="Texto a descifrar">
+    <br>
+    <br>
+    <label>Tu mensaje descifrado es:</label>
+    <p id="códigoDescifrado"></p>
+    <input type="number" id="offsetDescif" placeholder=""> Ingresa los desplazamientos para descifrar tu mensaje
+    <br>
+    <button type="submit" id="button_descifrar">Descifrar</button>
+  </section>
+
+
+
+  <script src="index.js"></script>
+  <script src="cipher.js"></script>
+
+</label>
+</section>
 </div>
-
-<br>
-<br>
-<br>
-<section id="first_section" class="dissapear" >
-  <label> El objetivo de este espacio es proporcionarte atención de Psicoterapia.
-        Al elaborar esta página surgió el cuestionamiento sobre el riesgo que corría tu información al momento de iniciar la conversación con tu psicoterapeuta, por lo que hemos pensado en utilizar el Código César (Para saber más da clic
-        <a href= "https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar">aquí)</a>, con el fin de que mantener la confidencialidad de tu información.
-<button id= "button_chat" >Iniciar Chat</button>
-</section>
-
-
-
-
-<section class="appear" id="second_section">
-<label> <strong>Chat</strong></label>
-<br>
-<br>
-<strong>Instrucciones:</strong> Para cifrar el mensaje, es necesario que ingreses el texto en el primer cuadro, el número de desplazamientos que deseas utilizar para cifrar el mensaje y dar clic en el botón cifrar. 
-<br> Para decifrarlo ingresa el texto en la segunda caja de texto, el número de desplazamientos que se utilizó para cifrarlo y da clic en el botón decifrar.
-<p>Bienvenid@ al chat de Psicoterapia, soy la Psic. Ana. Cuéntame ¿Cuál es el motivo de tu consulta?</p>
-<br>
-<input id= "inputStringCif" type="text" size="25" placeholder="Texto a crifrar">
-<br>
-<br>
-<label>Tu mensaje cifrado es:</label><p id="códigoCifrado"></p>
-<br>
-<input type="number" id="offsetCif" placeholder="">   Ingresa los desplazamientos para cifrar tu mensaje
-
-<br>
-<button type="submit" id= "button_cifrar">Cifrar</button>
-
-<br>
-<br>
-<input id= "inputStringDescif" class="mayúsculas" type="text" placeholder="Texto a descifrar">
-<br>
-<br>
-<label>Tu mensaje descifrado es:</label><p id="códigoDescifrado"></p>
-
-<br>
-<br>
-<input type="number" id="offsetDescif" placeholder="">   Ingresa los desplazamientos para descifrar tu mensaje
-<br>
-<button type="submit" id= "button_descifrar">Descifrar</button>
-</section>
-
-
-   
-    <script src="index.js"></script>
-    <script src="cipher.js"></script>
-      
 </body>
 </html>

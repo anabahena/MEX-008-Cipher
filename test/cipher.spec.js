@@ -1,6 +1,3 @@
-const encode = require ('./cipher.js');
-
-
 describe('cipher', () => {
 
   it('debería ser un objeto', () => {
