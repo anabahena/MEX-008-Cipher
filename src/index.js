@@ -8,6 +8,7 @@ const buttondescifrar = document.getElementById('button_descifrar');
 
 
 
+
 // Funcion para desaparecer la primera sección y aparecer la segunda sección
 const getfirstsection = ()=> {
 firstsection.classList.add ("disappear");
@@ -22,8 +23,8 @@ buttonchat.addEventListener ("click", getfirstsection);
 buttoncifrar.addEventListener ("click", () => {
     const offsetCif= document.getElementById("offsetCif");
     const inputStringCif = document.getElementById ("inputStringCif");
-
-    window.cipher.encode(offsetCif.value, inputStringCif.value);
+    const códigoCifrado = document.getElementById ("códigoCifrado");
+    códigoCifrado.innerHTML = window.cipher.encode(offsetCif.value, inputStringCif.value);
 });
 
 
@@ -33,8 +34,8 @@ buttoncifrar.addEventListener ("click", () => {
 buttondescifrar.addEventListener ("click", () => {
     const offsetDescif= document.getElementById("offsetDescif");
     const inputStringDescif = document.getElementById ("inputStringDescif");
-
-    window.cipher.encode(offsetDescif.value, output.value);
+    const códigoDescif= document.getElementById("códigoDescifrado")
+    códigoDescif.innerHTML = window.cipher.decode(offsetDescif.value, inputStringDescif.value);
 });
 
 
