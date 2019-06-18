@@ -1,11 +1,11 @@
 body{
   /* Esta es el fondo de mi pagina web */
   /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
-  background-image: url("https://adrianahurtadotelloblog.files.wordpress.com/2016/02/arbol.jpg");
+  background-image: url("https://www.psicoactiva.com/blog/wp-content/uploads/2017/06/mujer-psicologa-hombre-divan.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 90%;
+  background-size: 100%;
   /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
   background-attachment: fixed;
   -webkit-backface-visibility: inherit;
@@ -31,13 +31,14 @@ body{
 
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
   color: #ffffff; 
-  font-size: 10px; 
-  font-weight: 200px; 
+  font-weight: 1000px;
+  font-size: 12px; 
+
   text-align: center; 
   background:cadetblue; 
   margin: 0 0 20px; 
   overflow: hidden; 
-  padding: 5px; 
+  padding: 8px; 
   border-radius: 35px 0px 35px 0px; 
   -moz-border-radius: 35px 0px 35px 0px; 
   -webkit-border-radius: 35px 0px 35px 0px; 
@@ -54,11 +55,13 @@ font-family: 'Rajdhani', sans-serif;
   background-color: cadetblue;
   color: black;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 10px 10px;
   display: block;
   font-size: 120%;
   font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
   position: relative;
+  font-weight: bolder;
 }
   /* Agregar la propiedad de flotar a las secciones */
 .nav >li {
@@ -119,8 +122,26 @@ h2 {
 
   .appear {
     display: none;
+    
   }
 
+  .Chat{
+    border-bottom: 10px;
+    background-color: inherit;
+    border-style: solid;
+    background-color: cadetblue;
+
+  }
+
+  .instrucciones {
+    border-bottom: 10px;
+    background-color: inherit;
+    border-style: solid;
+    background-color: cadetblue;
+    font-weight: 900px;
+    font-size: 17px;
+
+  }
 /*Ingresando propiedades de estilo al boton de cifrar y descifrar*/
 #button_cifrar,#button_descifrar{
   display: inline-flex;
@@ -132,6 +153,7 @@ h2 {
   font-size: 20px;
   color: black;
   border-bottom: 20px;
+  font-weight: 900;
 
 }
 
@@ -150,8 +172,10 @@ h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   line-height: 30px;
-  border-bottom: 10px;
+  /* border-bottom: 10px;
   background-color: inherit;
+  border-style: solid;
+  background-color: cadetblue; */
 }
 /*Propiedades de estilo de la descripción 2*/
 #second_section{
@@ -162,6 +186,14 @@ h2 {
   font-size: 20px;
   text-align: center;
   line-height: 30px;
+  
+}
+
+.chat {
+  border-bottom: 10px;
+  background-color: inherit;
+  border-style: solid;
+  background-color: cadetblue;
 }
 
 
@@ -212,3 +244,19 @@ a:link
 { 
 text-decoration:none; 
 } 
+
+#cabe-Img{
+
+  width: 70px;
+  
+}
+
+#conver-Img {
+
+  width: 35px;
+}
+
+
+#registro-Img, #psic-Img, #chica-Img, #inicio-Img {
+  width: 18px;
+}

@@ -14,20 +14,20 @@
 
 
   <div id="root" class="título">
-    <h1>Bienvenid@ a tu "Consultorio Virtual de Psicoterapia para personas con sordera"</h1>
+    <h1> <img src="IMG/552432.png" id="cabe-Img">  Bienvenid@ a tu "Consultorio Virtual de Psicoterapia para personas con sordera"<img src="IMG/552432.png" id="hola-Img"></h1>
 
   </div>
 
   <div class="header">
     <ul class="nav">
-      <li> <a>Inicio </a></li>
-      <li><a>Nosotras</a>
+      <li> <a href=""><img src="IMG/122728-84.png" id="psic-Img">Inicio </a></li>
+      <li><a><img src="IMG/chica-sonriente.png" id="chica-Img">Nosotras</a>
         <ul>
           <li><a>¿Quiénes somos?</a></li>
         </ul>
       </li>
-      <li><a>Registro</a></li>
-      <li><a>Iniciar Sesión </a></li>
+      <li><a><img src="IMG/portapapeles.png" id="registro-Img">Registro</a></li>
+      <li><a><img src="IMG/iniciar-la-sesion.png" id="inicio-Img">Iniciar Sesión </a></li>
     </ul>
   </div>
 
@@ -36,27 +36,27 @@
   <br>
   <div>
     <section id="first_section" class="dissapear">
-      <label> El objetivo de este espacio es proporcionarte atención de Psicoterapia.
+      <label> El objetivo de este espacio es proporcionarte atención de Psicoterapia, por medio de un chat online.
         Al elaborar esta página surgió el cuestionamiento sobre el riesgo que corría tu información al momento de
-        iniciar la conversación con tu psicoterapeuta, por lo que hemos pensado en utilizar el Código César (Para saber
-        más da clic
-        <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar">aquí)</a>, con el fin de que mantener la
-        confidencialidad de tu información.
-  <div><button id="button_chat">Iniciar Chat</button></div>
-
-
-
-
-
+        iniciar la conversación con tu psicoterapeuta, por lo que hemos pensado en cifrar y descifrar tus conversaciones, con el fin de que mantener la
+        confidencialidad de tu información.</label>
+        <div><button id="button_chat"><img src="IMG/conversacion.png" id="conver-Img">Iniciar Chat</button></div>
+      </section>
+      
+  </div>
+  
   <section class="appear" id="second_section">
-    <label> <strong>Chat</strong></label>
+    <label class="Chat"> <strong>Chat</strong></label>
     <br>
     <br>
+    <section class="instrucciones">
     <strong>Instrucciones:</strong> Para cifrar el mensaje, es necesario que ingreses el texto en el primer cuadro, el
-    número de desplazamientos que deseas utilizar para cifrar el mensaje y dar clic en el botón cifrar.
-    <br> Para decifrarlo ingresa el texto en la segunda caja de texto, el número de desplazamientos que se utilizó para
+    número de cifrado y dar clic en el botón cifrar.
+    <br> Para decifrarlo ingresa el texto en la segunda caja de texto, el número que se utilizó para
     cifrarlo y da clic en el botón decifrar.
+  </section>
     <p>Bienvenid@ al chat de Psicoterapia, soy la Psic. Ana. Cuéntame ¿Cuál es el motivo de tu consulta?</p>
+
     <br>
     <input id="inputStringCif" type="text" size="25" placeholder="Texto a crifrar">
     <br>
@@ -85,8 +85,6 @@
   <script src="index.js"></script>
   <script src="cipher.js"></script>
 
-</label>
-</section>
-</div>
 </body>
+
 </html>
