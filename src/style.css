@@ -70,7 +70,7 @@ font-family: 'Rajdhani', sans-serif;
 }
   /* Agregar selector al menú de secciones */
 .nav li a:hover {
-  background-color: grey;
+  background-color: pink;
 }
   /* Agregar desplegado de submenús de las secciones */
 .nav li ul {
@@ -160,7 +160,7 @@ h2 {
 /*Propiedades de estilo de los botones chat, cifrar y descifrar ingresando una animación de color al seleccionarlo*/
 #button_chat:hover, #button_cifrar:hover, #button_descifrar:hover {
 
-  background-color: white;
+  background-color: pink;
 }
 
 /*Agregar propiedades al apartado de descripción*/
@@ -172,11 +172,17 @@ h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   line-height: 30px;
-  /* border-bottom: 10px;
-  background-color: inherit;
-  border-style: solid;
-  background-color: cadetblue; */
+
 }
+/* 
+#objetivo {
+  border-bottom: 10px;
+  border-style: inherit;
+  background-color: initial;
+
+} */
+
+
 /*Propiedades de estilo de la descripción 2*/
 #second_section{
 
@@ -245,7 +251,7 @@ a:link
 text-decoration:none; 
 } 
 
-#cabe-Img{
+#cabe-Img, #hola-Img{
 
   width: 70px;
   
@@ -254,6 +260,11 @@ text-decoration:none;
 #conver-Img {
 
   width: 35px;
+}
+
+#bloquear-Img, #desbloquear-Img {
+
+  width: 50px;
 }
 
 
