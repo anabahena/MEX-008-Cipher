@@ -11,7 +11,11 @@ body{
   -webkit-backface-visibility: inherit;
 }
 
+*{
+margin: 0;
+padding: 0;
 
+}
 
   /* Propiedades de las secciones de la página */
 .header{
@@ -21,6 +25,7 @@ body{
   text-align: justify;
   position: relative;
   font-family: 'Rajdhani', sans-serif;
+  display: flex;
 }
   /* Quitar las viñetas a las secciones */
 .ol,ul {
@@ -33,7 +38,6 @@ body{
   color: #ffffff; 
   font-weight: 1000px;
   font-size: 12px; 
-
   text-align: center; 
   background:cadetblue; 
   margin: 0 0 20px; 
@@ -167,20 +171,14 @@ h2 {
 #first_section {
   text-align: justify;
   color: black;
-  width: 1300px;
+  width: 100%;
   padding: 10px 15px;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   line-height: 30px;
+  
 
 }
-/* 
-#objetivo {
-  border-bottom: 10px;
-  border-style: inherit;
-  background-color: initial;
-
-} */
 
 
 /*Propiedades de estilo de la descripción 2*/
