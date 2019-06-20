@@ -11,11 +11,14 @@ encode: (offset, string) => {
   // Aplicando fórmula de cifrado César
   let cipherMensage 
 // Condición en mayúsculas
-  if (asciiMensage >= 65  && asciiMensage <= 90)
+  if (asciiMensage >= 65 && asciiMensage <= 90)
   {
     cipherMensage= (asciiMensage-65+parseInt(offset))%26+65;
   }
-
+  else if (asciiMensage >= 97 && asciiMensage <= 122)
+  {
+    cipherMensage= (asciiMensage-97+parseInt(offset))%26+97;
+  }
 // Obteniendo los caracteres cifrados de forma concatenada, para cifrar la frase completa
     mensageEncrypted += String.fromCharCode (cipherMensage);
     // console.log (mensageEncrypted);
@@ -34,15 +37,24 @@ encode: (offset, string) => {
   // Aplicando fórmula de cifrado César
   let descifradoMensage;
 // Condición en mayúsculas
-if (asciiMensageDes >= 65  && asciiMensageDes <= 90)
+  if (asciiMensageDes >= 65 && asciiMensageDes <= 90)
   {
-    descifradoMensage= 90-(90-asciiMensageDes+parseInt(offset))%26;
+    descifradoMensage= (asciiMensageDes + 65 - parseInt(offset)) %26 + 65;
   }
- 
+  else if (asciiMensageDes >= 97 && asciiMensageDes <= 122)
+  {
+    descifradoMensage= (asciiMensageDes - 122 - parseInt(offset)) %26 + 122;
+  }
+  else if (asciiMensageDes >= 33 && asciiMensageDes <= 64)
+  {
+    descifradoMensage= (asciiMensageDes - 33 - parseInt(offset)) %26 + 33;
+  }
+
 // Obteniendo los caracteres cifrados de forma concatenada, para cifrar la frase completa
     mensageEncrypted += String.fromCharCode (descifradoMensage);
     // console.log (mensageEncrypted);
   }
   return mensageEncrypted;
-  }
+
+  },
 };
