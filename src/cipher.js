@@ -19,11 +19,20 @@ encode: (offset, string) => {
   {
     cipherMensage= (asciiMensage-97+parseInt(offset))%26+97;
   }
+  // else if (asciiMensage >= 33 && asciiMensage <= 64)
+  // {
+  //   cipherMensage= (asciiMensage-33+parseInt(offset))%32+33;
+  // }
+  // else if (asciiMensage === 32)
+  // {
+  //   mensageEncrypted= mensageEncrypted + " ";
+  // }
+
 // Obteniendo los caracteres cifrados de forma concatenada, para cifrar la frase completa
     mensageEncrypted += String.fromCharCode (cipherMensage);
-    // console.log (mensageEncrypted);
   }
   return mensageEncrypted;
+
   },
 
   /*Codificar el contenido que se dirija en la caja*/
@@ -45,14 +54,8 @@ encode: (offset, string) => {
   {
     descifradoMensage= (asciiMensageDes - 122 - parseInt(offset)) %26 + 122;
   }
-  else if (asciiMensageDes >= 33 && asciiMensageDes <= 64)
-  {
-    descifradoMensage= (asciiMensageDes - 33 - parseInt(offset)) %26 + 33;
-  }
-
 // Obteniendo los caracteres cifrados de forma concatenada, para cifrar la frase completa
     mensageEncrypted += String.fromCharCode (descifradoMensage);
-    // console.log (mensageEncrypted);
   }
   return mensageEncrypted;
 
